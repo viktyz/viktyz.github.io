@@ -16,4 +16,4 @@ gems:
 #Others
 markdown: kramdown
 
-include: ["_others"]
+include: ["_others","js"]
