@@ -1,7 +1,8 @@
 # Setup
 title:        Alfred Jiang
 tagline:      欢迎访问 Alfred Jiang 的个人主页
-baseurl:      "viktyz.github.io"
+url:          "http://viktyz.github.io"
+baseurl:      "/"
 paginate:     1
 
 # About/contact
