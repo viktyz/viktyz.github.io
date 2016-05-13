@@ -1,21 +1,17 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Setup
+title:        Home
+tagline:      欢迎访问 Alfred Jiang 的个人主页
+baseurl:      ""
+paginate:     1
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+# About/contact
+author:
+  name:       viktyz
+  url:        viktyz.github.io 
 
-# Build settings
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
 markdown: kramdown
