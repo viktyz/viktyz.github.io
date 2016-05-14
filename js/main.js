@@ -5,7 +5,7 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   json: search_json_url + '/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-  noResultsText: '<li class="no-results">Not found in iOSNotebook. Google it ...</li>',
+  noResultsText: '<li class="no-results"><a href="/searchInGoogle.html">Not found. Try Google it ...</a></li>',
   limit: 50,
   fuzzy: false
 });
