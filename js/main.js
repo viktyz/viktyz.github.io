@@ -1,11 +1,9 @@
-var input_value = '';
-
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: search_json_url + '/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-  noResultsText: '<li class="no-results"><a href="/searchInGoogle.html">Not found. Try Google it ...</a></li>',
+  noResultsText: '<li class="no-results"><a href="https://www.google.com/search?q='+ input_value +'"></a>Not found. Try Google it ...</li>',
   limit: 50,
   fuzzy: false
 });
@@ -16,7 +14,3 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
-
-function searchInGoogle() {
-  window.open("https://www.google.com/search?q=" + input_value);
-}
