@@ -5,7 +5,11 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   json: search_json_url + '/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-  noResultsText: searchInGoogle() ,
+  noResultsText: '<li class="no-results" <script language="javascript">
+function searchInGoogle() {
+  window.open("https://www.google.com/search?q=" + input_value);
+}
+</script>>Not found in iOSNotebook. Google it ...</li>',
   limit: 50,
   fuzzy: false
 });
@@ -16,7 +20,3 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
-
-function searchInGoogle() {
-  window.open("https://www.google.com/search?q=" + input_value);
-}
