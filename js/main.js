@@ -1,5 +1,3 @@
-var input_value = document.getElementById('search-input').value
-
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
@@ -12,9 +10,6 @@ SimpleJekyllSearch({
 
 $(document).ready(function() {
   $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
-
-    input_value = document.getElementById('search-input').value
-
     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
     e.preventDefault();
   });
