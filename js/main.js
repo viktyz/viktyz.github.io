@@ -5,7 +5,7 @@ SimpleJekyllSearch({
   resultsContainer: document.getElementById('results-container'),
   json: search_json_url + '/search.json',
   searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
-  noResultsText: '<li><a href="https://www.google.co.jp/search?q='+ input_value +'">Google : '+ input_value +'</a></li>',
+  noResultsText: searchInGoogle() ,
   limit: 50,
   fuzzy: false
 });
@@ -16,3 +16,7 @@ $(document).ready(function() {
     e.preventDefault();
   });
 });
+
+function searchInGoogle() {
+  window.open("https://www.google.com/search?q=" + input_value);
+}
