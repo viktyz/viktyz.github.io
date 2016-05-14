@@ -4,3 +4,11 @@
   <input type="text" id="search-input" onkeyup="inputchanged()" class="input" placeholder="iOSNotebook Quick Search ...">
   <ul id="results-container" class="dropdown"></ul>
 </div>
+
+<script language="javascript">
+function inputchanged()
+{
+	input_value = document.getElementById('search-input').value;
+	print(input_value);
+}
+</script>
