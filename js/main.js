@@ -5,7 +5,7 @@ SimpleJekyllSearch({
   searchResultTemplate: '<li><a href="{url}" title="{title}">{title}</a></li>',
   noResultsText: '<li class="no-results"><a href="https://www.google.com">Not found. Google it ...</a></li>',
   limit: 50,
-  fuzzy: true
+  fuzzy: false
 });
 
 $(document).ready(function() {
